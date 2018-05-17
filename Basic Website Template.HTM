@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Mock Business page</title>
+<head>
+<style>
+body{background-image: url("FOR.jpg");
+background-size:cover;}
+*{cursor:pointer;}
+header{background-color:blue;
+       font-size:30px;
+       border: solid silver 3px;
+       text-align:center;
+       display:block;}
+header:hover{text-decoration:underline;
+             border:dotted black 2px;}
+div{display:block;
+    padding:3px;
+    opacity:0.8;
+    border:solid black 2px}
+#div1{background-color:orange;
+      color:red;
+     }
+#div1:hover{border:dotted;
+            opacity:1;}
+#div2{background-color:green;
+      color:silver;}
+#div3{background-color:brown;
+      color:yelllow;}
+div:hover{border:dotted;
+          opacity:1;}
+h2{text-align:center;}
+#HIDE{display:none;}
+footer{background-color:blue;
+       font-size:30px;
+       border: solid silver 3px;
+       text-align:center;
+       display:block;
+       position:relative;
+       bottom:0;
+             width:400px;}
+footer:hover{text-decoration:underline;
+             border:dotted black 2px;
+             bottom:0;}
+#D{background-color:gold;
+   text-decoration:underline;
+          border:dotted black 1px;
+         display:inline-block;
+         text-align:center;
+         position:absolute;
+         top:65px;
+         left:50px;}
+#S{display:none;
+   list-style-type:none;
+   padding:0;
+   border:0;
+   }
+#D:hover #S{text-decoration:underline;
+             display:block;}
+#S li a{color:green;}
+#S li a:hover{color:red;}
+#T{background-color:red;
+   text-decoration:underline;
+          border:dotted black 1px;
+         display:inline-block;
+         text-align:center;
+         position:absolute;
+         top:65px;
+         left:150px;}
+#Y{display:none;
+   list-style-type:none;
+   padding:0;
+   border:0;
+   }
+#T:hover #Y{text-decoration:underline;
+             display:block;}
+#Y li a{color:green;}
+#Y li a:hover{color:gold;}
+
+#M{background-color:silver;
+   text-decoration:underline;
+          border:dotted black 1px;
+         display:inline-block;
+         text-align:center;
+         position:absolute;
+         top:65px;
+         left:290px;}
+#N{display:none;
+   list-style-type:none;
+   padding:0;
+   border:0;
+   }
+#M:hover #N{text-decoration:underline;
+             display:block;}
+#N li a{color:green;}
+#N li a:hover{color:red;}
+
+
+</style>
+</head>
+<header>My Business</header>
+<body>
+<ul><div id="D">MENU
+<div id="S">
+<li><a href="https://www.w3schools.com/css/css_display_visibility.asp">Products</a></li>
+<li><a href="https://www.w3schools.com/css/css_dropdowns.asp">Corporate</a></li>
+<li><a href="../WageCalc.htm">Challenges</a></li>
+</div>
+</div>
+</ul>
+
+<ul><div id="T">PRODUCTS
+<div id="Y">
+<li><a href="gloves.htm">Gloves</a></li>
+<li><a href="https://www.w3schools.com/css/css_dropdowns.asp">Hats</a></li>
+<li><a href="../WageCalc.htm">Workwear</a></li>
+</div>
+</div>
+</ul>
+
+<ul><div id="M">INFORMATION
+<div id="N">
+<li><a href="gloves.htm">Stuff</a></li>
+<li><a href="https://www.w3schools.com/css/css_dropdowns.asp">Contact</a></li>
+<li><a href="../WageCalc.htm">Careers</a></li>
+</div>
+</div>
+</ul>
+
+<br><br>
+<br><br>
+<br><br>
+<div id="div1" onclick="Show()">
+<h2>About my Business</h2>
+<p>Information about my business
+Double click  for in depth information.</p>
+<p id="HIDE">In Depth information about my business.<br>
+In depth information about my busines<br>
+In depth information<br></p>
+</div>
+<br><br>
+<div id="div2">
+<h2>My Products</h2>
+<p>information about my products</h2>
+</div>
+<br><br>
+<div id="div3">
+<h2>My Goals</h2>
+<p>Information about my goasl</p>
+</div>
+<br><br>
+<div id="div2">
+<h2>My Products</h2>
+<p>information about my products</h2>
+</div>
+<br><br>
+<div id="div3">
+<h2>My Goals</h2>
+<p>Information about my goasl</p>
+</div>
+
+
+
+</body>
+<script>
+
+var A = document.getElementById("HIDE")
+function Show(){
+if(A.style.display === "none"){
+A.style.display = "block";}
+else{A.style.display = "none";}
+}
+
+
+</script>
+<footer>MyBusiness.corp</footer>
+</html>
